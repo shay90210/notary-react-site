@@ -3,7 +3,10 @@ import App from './App';
 
 import { createRoot } from 'react-dom/client';
 
-import './App.scss';
+import 'font-awesome/css/font-awesome.css';
+import '@fortawesome/free-brands-svg-icons';
+
+import './App.scss'
 
 const container = document.getElementById('root');
 const root = createRoot(container);
