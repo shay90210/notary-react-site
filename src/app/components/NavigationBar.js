@@ -1,39 +1,57 @@
-import { 
-    Nav, 
-    UncontrolledDropdown,
-    DropdownMenu, 
-    DropdownToggle,
-    DropdownItem,
-}
-from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavigationBar = () => {
-  return (
-    <Nav className='main-nav pt-3 pb-3 justify-content-center'>
-        <UncontrolledDropdown
-            direction='down'
+    const handleSelect = (eventKey) => alert(`selected $(eventKey)`);
+
+    return (
+        <Nav
+            onSelect={handleSelect}
+            activeKey= '1'
+            className='main-nav'
         >
-            <DropdownToggle
-                caret
+            <Nav.Item
+                className='nav-item'
             >
-                ABOUT
-            </DropdownToggle>
-            <DropdownMenu>
-                <DropdownItem>
-                    <NavLink className='nav-link' to='/'>Company</NavLink>
-                </DropdownItem>
-                    <DropdownItem divider />
-                <DropdownItem>
-                    <NavLink className='nav-link' to='/'>How It Works</NavLink>
-                </DropdownItem>
-                    <DropdownItem divider />
-                <DropdownItem>
-                    <NavLink className='nav-link' to='/'>Information</NavLink>
-                </DropdownItem>
-            </DropdownMenu>
-        </UncontrolledDropdown>
-    </Nav>    
+                <Nav.Link
+                    eventKey='1'
+                    href='#/home'
+                    className='nav-item'
+                >
+                    HOME
+                </Nav.Link>
+            </Nav.Item>
+                <NavDropdown
+                    title='ABOUT'
+                    id='nav-dropdown'
+                    className='nav-item'
+                >
+                    <NavDropdown.Item eventKey= '2.1'>About Our Company</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item eventKey= '2.2'>How Notary Works</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item eventKey= '2.3'>Information</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                    title='RESOURCES'
+                    id='nav-dropdown'
+                    className='nav-item'
+                >
+                    <NavDropdown.Item eventKey= '3.1'>Blog</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item eventKey= '3.2'>Knowledge Center</NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Item
+                    className='nav-item'
+                >
+                    <Nav.Link
+                        eventKey='4'
+                        href='#/contact'
+                    >
+                        CONTACT US
+                    </Nav.Link>
+                </Nav.Item>
+        </Nav>    
    )
 }
 
