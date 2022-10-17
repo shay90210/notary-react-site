@@ -19,7 +19,6 @@ $--fw-bolder: 900px;
 
 // NAVIGATION BAR
 .main-nav {
-    background-color: $-clr-dark;
     .nav-link {
         text-decoration: none;
         color: $--clr-light;
@@ -27,9 +26,9 @@ $--fw-bolder: 900px;
         margin: 50px;
         background: none;
         border: none;
+        font-family: 'cabin';
     }
     .nav-link:hover {
-        color: yellow;
         background: none;
     }
 }

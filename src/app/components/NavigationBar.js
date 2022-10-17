@@ -19,7 +19,7 @@ const NavigationBar = ({ direction, ...args }) => {
     const toggleNavbar = () => setCollapsed(!collapsed);
 
     return (
-        <Navbar sticky='top' className='main-nav' expand='md'>
+        <Navbar sticky='top' className='main-nav' expand='md' light>
             <NavbarToggler onClick={toggleNavbar} />
             <Collapse isOpen={!collapsed} navbar>
                 <Nav navbar>

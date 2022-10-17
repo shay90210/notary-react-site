@@ -7,6 +7,10 @@ import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap-social/bootstrap-social.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import 'typeface-open-sans';
+import 'typeface-roboto-condensed';
+import 'typeface-cabin';
+
 import 'font-awesome/css/font-awesome.css';
 import '@fortawesome/free-brands-svg-icons';
 
