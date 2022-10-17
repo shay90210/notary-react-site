@@ -1,4 +1,4 @@
-import HomeBackground from '../assets/imgs/mainbackground.jpg';
+import HomeBackground from '../assets/imgs/mainbackground1.jpg';
 
 const HomePage = () => {
     return (
