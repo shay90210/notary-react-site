@@ -10,16 +10,28 @@ const NavigationBar = () => {
                 navbar
             >
                 <NavItem>
-                    <NavLink href='/'>HOME</NavLink>
+                    <NavLink 
+                        href='/'
+                        className='nav-link'
+                    >HOME</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href='/'>ABOUT OUR COMPANY</NavLink>
+                    <NavLink 
+                        href='/'
+                        className='nav-link'
+                    >ABOUT OUR COMPANY</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href='/'>RESOURCES</NavLink>
+                    <NavLink 
+                        href='/'
+                        className='nav-link'
+                    >RESOURCES</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href='/'>CONTACT US</NavLink>
+                    <NavLink 
+                        href='/'
+                        className='nav-link'
+                    >CONTACT US</NavLink>
                 </NavItem>
             </Nav>
         </Navbar>
