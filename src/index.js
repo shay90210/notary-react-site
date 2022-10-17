@@ -4,6 +4,9 @@ import App from './App';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
+import 'bootstrap-social/bootstrap-social.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import 'font-awesome/css/font-awesome.css';
 import '@fortawesome/free-brands-svg-icons';
 

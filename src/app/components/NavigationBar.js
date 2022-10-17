@@ -1,52 +1,63 @@
 import {  
     Navbar, 
-    NavbarBrand, 
     Nav, 
     NavItem, 
-    NavLink 
+    NavLink,
+    DropdownMenu, 
+    DropdownToggle,
+    DropdownItem,
+    Dropdown,
 } from 'reactstrap';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
 
-const NavigationBar = () => {
+const NavigationBar = ({ direction, ...args }) => {
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggle = () => setDropdownOpen((prevState) => !prevState);
 
     return (
-        <div>
-            <Navbar
-                sticky='top'
-                className='main-nav'
-                expand='md' 
-            >
-                <NavbarBrand></NavbarBrand>
-                <Nav
-                    className='second-nav'
-                >
-                    <NavItem>
-                        <NavLink 
-                            to='/'
-                            className='nav-link'
-                        >HOME</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink 
-                            to='/'
-                            className='nav-link'
-                        >ABOUT OUR COMPANY</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink 
-                            to='/'
-                            className='nav-link'
-                        >RESOURCES</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink 
-                            to='/'
-                            className='nav-link'
-                        >CONTACT</NavLink>
-                    </NavItem>
-                </Nav>
-            </Navbar>
-        </div>
+        <Navbar sticky='top' className='main-nav' expand='md'>
+            <Nav navbar>
+                <NavItem>
+                    <NavLink to='/' className='nav-link'>HOME</NavLink>
+                </NavItem>
+                    <Dropdown
+                        isOpen={dropdownOpen}
+                        toggle={toggle}
+                        direction={direction}
+                    >
+                        <DropdownToggle className='nav-link'>ABOUT</DropdownToggle>
+                            <DropdownMenu {...args}>
+                                <DropdownItem>Our Company</DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem>How It Works</DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem>Information</DropdownItem>
+                            </DropdownMenu>
+                    </Dropdown>
+                    <Dropdown
+                        isOpen={dropdownOpen}
+                        toggle={toggle}
+                        direction={direction}
+                    >
+                            <DropdownToggle className='nav-link'>RESOURCES</DropdownToggle>
+                                <DropdownMenu>
+                                    <DropdownItem>Blog</DropdownItem>
+                                    <DropdownItem divider />
+                                    <DropdownItem>Knowledge Center</DropdownItem>
+                                </DropdownMenu>
+                    </Dropdown>
+                <NavItem>
+                    <NavLink to='/' className='nav-link'>CONTACT</NavLink>
+                </NavItem>
+            </Nav>
+        </Navbar>
     );
+}
+
+NavigationBar.propTypes = {
+    direction: PropTypes.string,
 }
 
 export default NavigationBar; 
