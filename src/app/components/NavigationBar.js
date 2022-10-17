@@ -40,7 +40,7 @@ const NavigationBar = () => {
                         <NavLink 
                             to='/'
                             className='nav-link'
-                        >CONTACT US</NavLink>
+                        >CONTACT</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar>

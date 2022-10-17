@@ -22,10 +22,13 @@ $--fw-bolder: 900px;
     background-color: $-clr-dark;
     .second-nav {
         list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
     }
     .nav-link {
         text-decoration: none;
         color: $--clr-light;
+        cursor: pointer;
     }
     .nav-link:hover {
         color: yellow;
