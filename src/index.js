@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'typeface-open-sans';
 import 'typeface-roboto-condensed';
 import 'typeface-cabin';
+import 'typeface-recursive';
 
 import 'font-awesome/css/font-awesome.css';
 import '@fortawesome/free-brands-svg-icons';

@@ -39,6 +39,23 @@ $--fw-bolder: 900px;
     border-radius: 50%;
 }
 
+// PAGES
+
+// Homepage
+.main-title {
+    padding-top: 200px;
+    text-align: center;
+    font-size: $--size-1;
+    font-family: 'recursive';
+}
+
+.main-subtitle {
+    text-align: center;
+    font-size: $--size-3;
+    font-family: 'open-sans';
+    font-size: $--size-p1;
+}
+
 // MEDIA QUERIES -----------------------------------
 
 //Navigation Bar

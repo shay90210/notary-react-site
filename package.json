@@ -27,6 +27,7 @@
     "sass": "^1.55.0",
     "typeface-cabin": "^1.1.13",
     "typeface-open-sans": "^1.1.13",
+    "typeface-recursive": "^1.1.13",
     "typeface-roboto-condensed": "^1.1.13",
     "web-vitals": "^2.1.4"
   },
