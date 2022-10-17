@@ -8,10 +8,13 @@ import {
     DropdownToggle,
     DropdownItem,
     Collapse, 
-    NavbarToggler
+    NavbarToggler,
+    NavbarBrand
 } from 'reactstrap';
 
 import { useState } from 'react';
+
+import NotaryLogo from '../assets/imgs/NovaNotary-Logo.png';
 
 const NavigationBar = ({ direction, ...args }) => {
     const [collapsed, setCollapsed] = useState(false);
@@ -20,6 +23,14 @@ const NavigationBar = ({ direction, ...args }) => {
 
     return (
         <Navbar sticky='top' className='main-nav' expand='md' light>
+            <NavbarBrand className='brand-name'>
+                <img 
+                    src={NotaryLogo}
+                    alt='notary brand logo'
+                    className='brand-logo'
+                />
+                <h1 className='brand-name'>Nova Notary</h1>
+            </NavbarBrand>
             <NavbarToggler onClick={toggleNavbar} />
             <Collapse isOpen={!collapsed} navbar>
                 <Nav navbar>
