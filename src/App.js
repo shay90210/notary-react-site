@@ -1,9 +1,13 @@
-import NavigationBar from '../src/app/components/NavigationBar';
-
-import { Routes, Route } from 'react-router-dom';
-
+// PAGES
 import HomePage from './app/pages/HomePage';
 
+//COMPONENTS
+import NavigationBar from '../src/app/components/NavigationBar';
+
+//IMPORTS FROM DEPENDENCIES
+import { Routes, Route } from 'react-router-dom';
+
+//STYLING
 import './App.scss';
 
 function App() {

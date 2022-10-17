@@ -13,6 +13,7 @@ const NavigationBar = () => {
             <Navbar
                 sticky='top'
                 className='main-nav'
+                expand='md' 
             >
                 <NavbarBrand></NavbarBrand>
                 <Nav
