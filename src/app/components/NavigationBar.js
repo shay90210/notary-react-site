@@ -10,6 +10,7 @@ import {
     Collapse, 
     NavbarToggler
 } from 'reactstrap';
+
 import { useState } from 'react';
 
 const NavigationBar = ({ direction, ...args }) => {
@@ -26,7 +27,7 @@ const NavigationBar = ({ direction, ...args }) => {
                         <NavLink to='/' className='nav-link'>HOME</NavLink>
                     </NavItem>
                         <UncontrolledDropdown>
-                            <DropdownToggle className='nav-link'>ABOUT</DropdownToggle>
+                            <DropdownToggle caret className='nav-link'>ABOUT</DropdownToggle>
                                 <DropdownMenu {...args}>
                                     <DropdownItem>Our Company</DropdownItem>
                                     <DropdownItem divider />
@@ -36,7 +37,7 @@ const NavigationBar = ({ direction, ...args }) => {
                                 </DropdownMenu>
                         </UncontrolledDropdown>
                         <UncontrolledDropdown>
-                            <DropdownToggle className='nav-link'>RESOURCES</DropdownToggle>
+                            <DropdownToggle caret className='nav-link'>RESOURCES</DropdownToggle>
                                 <DropdownMenu>
                                     <DropdownItem>Blog</DropdownItem>
                                     <DropdownItem divider />

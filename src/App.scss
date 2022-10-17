@@ -25,8 +25,11 @@ $--fw-bolder: 900px;
         color: $--clr-light;
         cursor: pointer;
         margin: 50px;
+        background: none;
+        border: none;
     }
     .nav-link:hover {
         color: yellow;
+        background: none;
     }
 }
