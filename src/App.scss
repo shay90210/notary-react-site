@@ -18,6 +18,16 @@ $--fw-bolder: 900px;
 // COMPONENTS -------------------------------------
 
 // NAVIGATION BAR
-.nav-link {
-    text-decoration: none;
+.main-nav {
+    background-color: $-clr-dark;
+    .second-nav {
+        list-style-type: none;
+    }
+    .nav-link {
+        text-decoration: none;
+        color: $--clr-light;
+    }
+    .nav-link:hover {
+        color: yellow;
+    }
 }

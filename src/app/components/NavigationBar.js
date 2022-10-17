@@ -10,30 +10,35 @@ const NavigationBar = () => {
 
     return (
         <div>
-            <Navbar>
+            <Navbar
+                sticky='top'
+                className='main-nav'
+            >
                 <NavbarBrand></NavbarBrand>
-                <Nav>
+                <Nav
+                    className='second-nav'
+                >
                     <NavItem>
                         <NavLink 
-                            href='/'
+                            to='/'
                             className='nav-link'
                         >HOME</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink 
-                            href='/'
+                            to='/'
                             className='nav-link'
                         >ABOUT OUR COMPANY</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink 
-                            href='/'
+                            to='/'
                             className='nav-link'
                         >RESOURCES</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink 
-                            href='/'
+                            to='/'
                             className='nav-link'
                         >CONTACT US</NavLink>
                     </NavItem>
