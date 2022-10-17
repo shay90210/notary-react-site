@@ -5,7 +5,6 @@ const HomePage = () => {
         <div
             style={{ backgroundImage: `url(${HomeBackground})` }}
         >
-            
         </div>
     );
 }
