@@ -1,10 +1,10 @@
-import {  Navbar, Navbarbrand, Nav, NavItem, NavLink } from 'reactstrap';
+import {  Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
 const NavigationBar = () => {
 
     return (
         <Navbar>
-            <Navbarbrand></Navbarbrand>
+            <NavbarBrand></NavbarBrand>
             <Nav 
                 center
                 navbar
