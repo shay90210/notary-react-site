@@ -28,9 +28,7 @@ const NavigationBar = ({ direction, ...args }) => {
                     src={NotaryLogo}
                     alt='notary brand logo'
                     className='brand-logo'
-                />
-                <h1 className='brand-name'>Nova Notary</h1>
-            </NavbarBrand>
+                /></NavbarBrand>
             <NavbarToggler onClick={toggleNavbar} />
             <Collapse isOpen={!collapsed} navbar>
                 <Nav navbar>

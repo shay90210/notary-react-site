@@ -39,6 +39,13 @@ $--fw-bolder: 900px;
     border-radius: 50%;
 }
 
-.brand-name {
-    margin-left: 10px;
+// MEDIA QUERIES ------------------------------------
+
+//Navigation Bar 
+@media screen and (max-width: 767px) {
+    .main-nav {
+        .nav-link {
+            margin: 0;
+        }
+    }
 }
