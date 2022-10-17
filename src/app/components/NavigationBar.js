@@ -1,4 +1,10 @@
-import {  Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import {  
+    Navbar, 
+    NavbarBrand, 
+    Nav, 
+    NavItem, 
+    NavLink 
+} from 'reactstrap';
 
 const NavigationBar = () => {
 
@@ -6,10 +12,7 @@ const NavigationBar = () => {
         <div>
             <Navbar>
                 <NavbarBrand></NavbarBrand>
-                <Nav 
-                    center
-                    navbar
-                >
+                <Nav>
                     <NavItem>
                         <NavLink 
                             href='/'
