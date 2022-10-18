@@ -62,6 +62,12 @@ $--fw-bolder: 900;
     font-weight: $--fw-bold;
 }
 
+// Contact Page
+.contact-form {
+    .form-button {
+        background-color: $--clr-primary;
+    }
+}
 // MEDIA QUERIES -----------------------------------
 
 //Navigation Bar

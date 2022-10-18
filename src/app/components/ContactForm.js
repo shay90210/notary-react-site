@@ -29,6 +29,7 @@ const ContactForm = () => {
                 }}
                 onSubmit={handleSubmit}
                 validate={validateContactForm}
+                className='contact-form'
             >
                 <Card className='form-content'>
                     <Form>
@@ -111,7 +112,7 @@ const ContactForm = () => {
                             </FormGroup>
                             <FormGroup row>
                                 <Col md={{ size: 10, offset: 2 }}>
-                                    <Button type='submit'>
+                                    <Button type='submit' className='form-button'>
                                         SUBMIT
                                     </Button>
                                 </Col>
