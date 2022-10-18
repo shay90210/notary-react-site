@@ -1,4 +1,4 @@
-import { Button, Label, Col, FormGroup, Card, CardBody, CardTitle } from 'reactstrap';
+import { Button, Label, Col, FormGroup, Card, CardBody } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { validateContactForm } from '../utils/validateContactForm';
 
@@ -31,17 +31,14 @@ const ContactForm = () => {
                 validate={validateContactForm}
                 className='contact-form'
             >
-                <Card className='form-content'>
+                <Card>
                     <Form>
                         <CardBody>
-                            <CardTitle>
-                                Fill out the contact form with the required information, and we will get back to you to set up an appointment.
-                            </CardTitle>
                             <FormGroup row>
                                 <Label htmlFor='firstName' md='2'>
                                     First Name
                                 </Label>
-                                <Col md='10'>
+                                <Col md='6'>
                                     <Field
                                         name='firstName'
                                         placeholder='First Name'
@@ -56,7 +53,7 @@ const ContactForm = () => {
                                 <Label htmlFor='lastName' md='2'>
                                     Last Name
                                 </Label>
-                                <Col md='10'>
+                                <Col md='6'>
                                     <Field
                                         name='lastName'
                                         placeholder='Last Name'
@@ -71,7 +68,7 @@ const ContactForm = () => {
                                 <Label htmlFor='email' md='2'>
                                     Email Address
                                 </Label>
-                                <Col md='10'>
+                                <Col md='6'>
                                     <Field
                                         name='email'
                                         placeholder='Email Address'
@@ -86,7 +83,7 @@ const ContactForm = () => {
                                 <Label htmlFor='phoneNum' md='2'>
                                     Phone Number
                                 </Label>
-                                <Col md='10'>
+                                <Col md='6'>
                                     <Field
                                         name='phoneNum'
                                         placeholder='Phone Number'
@@ -99,20 +96,19 @@ const ContactForm = () => {
                             </FormGroup>
                             <FormGroup row>
                                 <Label md='2'>
-                                    Notary Type?
+                                    Notary Type
                                 </Label>
-                                <Label md={{ size:4, offset: 2 }}>
+                                <Label check md={{ size:4, offset: 2 }}>
                                     Real Estate 
-                                    <Field 
-                                        name='agree'
-                                        type='checkbox'
-                                        className='form-check-input'
-                                    /> { ' ' }
                                 </Label>
                             </FormGroup>
                             <FormGroup row>
                                 <Col md={{ size: 10, offset: 2 }}>
-                                    <Button type='submit' className='form-button'>
+                                    <Button 
+                                        type='submit' 
+                                        className='form-button'
+                                        style={{ backgroundColor: 'purple' }}
+                                    >
                                         SUBMIT
                                     </Button>
                                 </Col>
