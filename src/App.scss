@@ -48,7 +48,7 @@ $--fw-bolder: 900;
     text-align: center;
     font-size: $--size-1;
     font-family: 'recursive';
-    color: $--clr-light;
+    color: $--clr-primary;
     font-weight: $--fw-bolder;
 }
 
@@ -56,8 +56,8 @@ $--fw-bolder: 900;
     text-align: center;
     font-size: $--size-3;
     font-family: 'open-sans';
-    font-size: $--size-p1;
-    color: $--clr-light;
+    font-size: $--size-3;
+    color: $--clr-primary;
     padding-bottom: 200px;
     font-weight: $--fw-bold;
 }

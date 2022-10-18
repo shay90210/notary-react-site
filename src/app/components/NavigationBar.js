@@ -40,17 +40,17 @@ const NavigationBar = ({ direction, ...args }) => {
                                 <DropdownMenu {...args}>
                                     <DropdownItem>Our Company</DropdownItem>
                                     <DropdownItem divider />
-                                    <DropdownItem>How It Works</DropdownItem>
-                                    <DropdownItem divider />
-                                    <DropdownItem>Information</DropdownItem>
+                                    <DropdownItem>Newsletter</DropdownItem>
                                 </DropdownMenu>
                         </UncontrolledDropdown>
                         <UncontrolledDropdown>
-                            <DropdownToggle caret className='nav-link'>RESOURCES</DropdownToggle>
+                            <DropdownToggle caret className='nav-link'>SOLUTIONS</DropdownToggle>
                                 <DropdownMenu>
-                                    <DropdownItem>Blog</DropdownItem>
+                                    <DropdownItem>In-Person</DropdownItem>
                                     <DropdownItem divider />
-                                    <DropdownItem>Knowledge Center</DropdownItem>
+                                    <DropdownItem>Virtual</DropdownItem>
+                                    <DropdownItem divider />
+                                    <DropdownItem>Title Agents/Lenders</DropdownItem>
                                 </DropdownMenu>
                         </UncontrolledDropdown>
                     <NavItem>

@@ -11,7 +11,7 @@ const HomePage = () => {
         >
             <section>
                 <h1 className='main-title'>Nova Notary</h1>
-                <h2 className='main-subtitle'>Need to notarize a document? Connect with us to take care of your notary needs today!</h2>
+                <h2 className='main-subtitle'>Connect with us to take care of your notary needs today!</h2>
             </section>
         </div>
     );
