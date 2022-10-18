@@ -54,7 +54,7 @@ const NavigationBar = ({ direction, ...args }) => {
                                 </DropdownMenu>
                         </UncontrolledDropdown>
                     <NavItem>
-                        <NavLink to='/' className='nav-link'>CONTACT</NavLink>
+                        <NavLink to='contact' className='nav-link'>CONTACT</NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>

@@ -1,23 +1,8 @@
-import { Formik } from "formik";
+import ContactForm from '../components/ContactForm';
 
 const ContactPage = () => {
     return (
-        <div>
-            <h1>Contact Us to Set Up an Appointment!</h1>
-            <Formik
-                initialValues={{
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    phoneNum: '',
-                    inPerson: false,
-                    virtual: false,
-                    realEstate: false,
-                }}
-            >
-
-            </Formik>
-        </div>
+        <ContactForm />
     )
 }
 
