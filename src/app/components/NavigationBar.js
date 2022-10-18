@@ -33,7 +33,7 @@ const NavigationBar = ({ direction, ...args }) => {
             <Collapse isOpen={!collapsed} navbar>
                 <Nav navbar>
                     <NavItem>
-                        <NavLink to='/' className='nav-link'>HOME</NavLink>
+                        <NavLink className='nav-link' href='/'>HOME</NavLink>
                     </NavItem>
                         <UncontrolledDropdown>
                             <DropdownToggle caret className='nav-link'>ABOUT</DropdownToggle>
@@ -54,7 +54,7 @@ const NavigationBar = ({ direction, ...args }) => {
                                 </DropdownMenu>
                         </UncontrolledDropdown>
                     <NavItem>
-                        <NavLink to='contact' className='nav-link'>CONTACT</NavLink>
+                        <NavLink className='nav-link' href='/contact'>CONTACT</NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>
