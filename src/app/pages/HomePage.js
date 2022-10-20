@@ -19,7 +19,8 @@ const HomePage = () => {
                 <img 
                     src={ApprovalStar}
                     alt='gold certification star indicating certified approval'
-                    width=''  
+                    width='300px'
+                    className='approval-star'  
                 />
             </section>
         </div>

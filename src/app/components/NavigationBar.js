@@ -22,7 +22,7 @@ const NavigationBar = ({ direction, ...args }) => {
     const toggleNavbar = () => setCollapsed(!collapsed);
 
     return (
-        <Navbar sticky='top' className='main-nav' expand='md'>
+        <Navbar sticky='top' className='main-nav' expand='md' light>
             <NavbarBrand className='brand-name'>
                 <img 
                     src={NotaryLogo}
