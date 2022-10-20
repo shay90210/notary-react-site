@@ -1,15 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+
+import { Container, Col } from "react-bootstrap";
 
 const Footer = () => {
     return (
         <div>
             <footer>
-                <ul>
-                    <li><FontAwesomeIcon icon={faTwitter} /></li>
-                    <li><FontAwesomeIcon icon={faFacebook} /></li>
-                </ul>
+                <Container>
+                    <Col>
+                        <ul>
+                            <li><FontAwesomeIcon icon={faInstagram} /></li>
+                        </ul>                
+                    </Col>
+                </Container>
             </footer>
         </div>
     );
