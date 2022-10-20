@@ -22,13 +22,14 @@ const NavigationBar = ({ direction, ...args }) => {
     const toggleNavbar = () => setCollapsed(!collapsed);
 
     return (
-        <Navbar sticky='top' className='main-nav' expand='md' light>
+        <Navbar sticky='top' className='main-nav' expand='md'>
             <NavbarBrand className='brand-name'>
                 <img 
                     src={NotaryLogo}
                     alt='notary brand logo'
                     className='brand-logo'
-                /></NavbarBrand>
+                />
+            </NavbarBrand>
             <NavbarToggler onClick={toggleNavbar} />
             <Collapse isOpen={!collapsed} navbar>
                 <Nav navbar>
