@@ -44,19 +44,22 @@ $--fw-bolder: 900;
 }
 
 footer {
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 50px;
+    .social-icons { 
+        color: $--clr-light;
+        list-style-type: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .social-icons:hover {
+        color: yellow;
+    }
     h3 {
         color: $--clr-light;
         font-family: 'cabin';
+        font-size: $--size-p1;
     }
-}
-
-.social-icons { 
-    color: $--clr-light;
-    list-style-type: none;
-    font-size: 30px;
-    cursor: pointer;
 }
 
 // PAGES -------------------------------------------
