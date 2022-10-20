@@ -2,6 +2,7 @@
 
 // COLOR SCHEMES 
 $--clr-primary: #791760;
+$--clr-secondary: #561A68;
 $--clr-light: #ececec;
 $-clr-dark: #272343;
 
@@ -44,13 +45,15 @@ footer {
     h3 {
         color: $--clr-light;
         font-family: 'cabin';
+        padding-top: 15px;
     }
 }
 
 .social-icons { 
     color: $--clr-light;
     list-style-type: none;
-    font-size: 35px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 // PAGES -------------------------------------------
