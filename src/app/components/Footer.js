@@ -5,12 +5,13 @@ import { Container, Col } from "react-bootstrap";
 
 const Footer = () => {
     return (
-        <div>
+        <div style={{ background: '#272343' }}>
             <footer>
                 <Container>
                     <Col>
+                        <h3>Social Media</h3>
                         <ul>
-                            <li><FontAwesomeIcon icon={faInstagram} /></li>
+                            <li className='social-icons'><FontAwesomeIcon icon={faInstagram} /></li>
                         </ul>                
                     </Col>
                 </Container>

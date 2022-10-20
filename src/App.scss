@@ -40,7 +40,20 @@ $--fw-bolder: 900;
     border-radius: 50%;
 }
 
-// PAGES
+footer {
+    h3 {
+        color: $--clr-light;
+        font-family: 'cabin';
+    }
+}
+
+.social-icons { 
+    color: $--clr-light;
+    list-style-type: none;
+    font-size: 35px;
+}
+
+// PAGES -------------------------------------------
 
 // Homepage
 .main-title {
