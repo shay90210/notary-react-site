@@ -23,12 +23,12 @@ const ContactForm = () => {
             <h3
                 style={{ 
                     textAlign: 'center',
-                    fontSize: '22px',
+                    fontSize: '18px',
                     fontFamily: 'open-sans'
 
                 }}
             >
-                Fill out the form below so that we can schedule the next available appointment for you!
+                Please fill out the form below so that we can schedule the next available appointment for you!
             </h3>
             <Formik
                 initialValues={{
@@ -111,9 +111,32 @@ const ContactForm = () => {
                                 <Label md='2'>
                                     Notary Type
                                 </Label>
-                                <Label check md={{ size:4, offset: 2 }}>
-                                    Real Estate 
-                                </Label>
+                                <div role='group' aria-labelledby='checkbox-group'>
+                                    <label md='4'>
+                                        <Field 
+                                            type='checkbox'
+                                            name='checked'
+                                            value='inPerson'
+                                        />
+                                        In-Person
+                                    </label>
+                                    <label md='4'>
+                                        <Field 
+                                            type='checkbox'
+                                            name='checked'
+                                            value='virtual' 
+                                        />
+                                        Virtual
+                                    </label>
+                                    <label>
+                                    <Field 
+                                        type='checkbox'
+                                        name='checked'
+                                        value='realEstate' 
+                                    />
+                                    Real Estate
+                                    </label>
+                                </div>
                             </FormGroup>
                             <FormGroup row>
                                 <Col md={{ size: 10, offset: 2 }}>
