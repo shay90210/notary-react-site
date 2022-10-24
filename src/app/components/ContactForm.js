@@ -1,12 +1,22 @@
 import { Button, Label, Col, FormGroup, Card, CardBody } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { validateContactForm } from '../utils/validateContactForm';
+import { useRef } from 'react';
+
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
-    const handleSubmit = (values, {resetForm}) => {
-        console.log('form values:', values);
-        console.log('in JSON forma:', JSON.stringify(values));
-        resetForm();
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_k0z3tdi', '', form.current, 'HsQ73zypgOlmQBhhb')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     }
 
     return (
@@ -40,9 +50,10 @@ const ContactForm = () => {
                     virtual: false,
                     realEstate: false,
                 }}
-                onSubmit={handleSubmit}
+                onSubmit={sendEmail}
                 validate={validateContactForm}
                 className='contact-form'
+                ref={form}
             >
                 <Card>
                     <Form>
