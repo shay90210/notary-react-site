@@ -49,8 +49,9 @@ footer {
     .social-icons { 
         color: $--clr-light;
         list-style-type: none;
-        font-size: 30px;
+        font-size: 25px;
         cursor: pointer;
+        margin-right: 20px;
     }
     .social-icons:hover {
         color: yellow;
