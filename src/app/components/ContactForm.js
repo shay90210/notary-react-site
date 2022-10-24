@@ -27,7 +27,9 @@ const ContactForm = () => {
                     fontFamily: 'open-sans'
 
                 }}
-            >Fill out the form below so that we can schedule the next available appointment for you!</h3>
+            >
+                Fill out the form below so that we can schedule the next available appointment for you!
+            </h3>
             <Formik
                 initialValues={{
                     firstName: '',
