@@ -13,10 +13,21 @@ const ContactForm = () => {
         <div>
             <h1
                 className='pt-4 pb-4'
-                style={{ textAlign: 'center' }}
+                style={{ 
+                    textAlign: 'center',
+                    fontFamily: 'cabin'
+                }}
             >
                 Contact Us
             </h1>
+            <h3
+                style={{ 
+                    textAlign: 'center',
+                    fontSize: '22px',
+                    fontFamily: 'open-sans'
+
+                }}
+            >Fill out the form below so that we can schedule the next available appointment for you!</h3>
             <Formik
                 initialValues={{
                     firstName: '',
