@@ -7,7 +7,7 @@ import {
     Input,  
 } from 'reactstrap';
 
-import * as emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
 
@@ -30,121 +30,121 @@ const ContactForm = () => {
             >
                 <FormGroup row>
                     <Label
-                    for='firstName'
-                    sm={2}
+                        for='firstName'
+                        sm={2}
                     >
-                    First Name
+                        First Name
                     </Label>
-                    <Col sm={10}>
-                    <Input
-                        id='firstName'
-                        name='firstName'
-                        placeholder='First Name'
-                        type='text'
-                    />
+                    <Col sm={6}>
+                        <Input
+                            id='firstName'
+                            name='firstName'
+                            placeholder='First Name'
+                            type='text'
+                        />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Label
-                    for='lastName'
-                    sm={2}
+                        for='lastName'
+                        sm={2}
                     >
-                    LastName
+                        LastName
                     </Label>
-                    <Col sm={10}>
-                    <Input
-                        id='lastName'
-                        name='lastName'
-                        placeholder='Last Name'
-                        type='text'
-                    />
+                    <Col sm={6}>
+                        <Input
+                            id='lastName'
+                            name='lastName'
+                            placeholder='Last Name'
+                            type='text'
+                        />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Label
-                    for='email'
-                    sm={2}
+                        for='email'
+                        sm={2}
                     >
-                    Email Address
+                        Email Address
                     </Label>
-                    <Col sm={10}>
-                    <Input
-                        id='email'
-                        name='email'
-                        placeholder='Email Address'
-                        type='email'
-                    />
+                    <Col sm={6}>
+                        <Input
+                            id='email'
+                            name='email'
+                            placeholder='Email Address'
+                            type='email'
+                        />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Label
-                    for='phoneNum'
-                    sm={2}
+                        for='phoneNum'
+                        sm={2}
                     >
-                    Phone Number
+                        Phone Number
                     </Label>
-                    <Col sm={10}>
-                    <Input
-                        id='phoneNum'
-                        name='phoneNum'
-                        placeholder='Phone Number'
-                        type='phoneNum'
-                    />
+                    <Col sm={6}>
+                        <Input
+                            id='phoneNum'
+                            name='phoneNum'
+                            placeholder='Phone Number'
+                            type='phoneNum'
+                        />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Label
-                    for="checkbox"
-                    sm={2}
+                        for="checkbox"
+                        sm={2}
                     >
-                    Appointment Type
+                        Appointment Type
                     </Label>
                     <Col
-                    sm={{
-                        size: 2
-                    }}
+                        sm={{
+                            size: 2
+                        }}
                     >
                     <FormGroup check>
                         <Input
-                        id="checkbox1"
-                        type="checkbox"
+                            id="checkbox1"
+                            type="checkbox"
                         />
                         {' '}
                         <Label check>
-                        In-Person
+                            In-Person
                         </Label>
                     </FormGroup>
                     </Col>
                     <Col
-                    sm={{
-                        size: 2
-                    }}
+                        sm={{
+                            size: 2
+                        }}
                     >
                     <FormGroup check>
                         <Input
-                        id="checkbox2"
-                        type="checkbox"
+                            id="checkbox2"
+                            type="checkbox"
                         />
                         {' '}
                         <Label check>
-                        In-Person
+                            In-Person
                         </Label>
                     </FormGroup>
                     </Col>
                 </FormGroup>
                     <Col
-                    sm={{
-                        size: 2
-                    }}
+                        sm={{
+                            size: 2
+                        }}
                     >
                     <FormGroup check>
                         <Input
-                        id="checkbox3"
-                        type="checkbox"
+                            id="checkbox3"
+                            type="checkbox"
                         />
                         {' '}
                         <Label check>
-                        Real Estate
+                            Real Estate
                         </Label>
                     </FormGroup>
                     </Col>
@@ -153,10 +153,10 @@ const ContactForm = () => {
                     row
                 >
                     <Col
-                    sm={{
-                        offset: 2,
-                        size: 10
-                    }}
+                        sm={{
+                            offset: 2,
+                            size: 10
+                        }}
                     >
                     <Button
                         type='submit'
