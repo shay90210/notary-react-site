@@ -35,7 +35,7 @@ const ContactForm = () => {
                     >
                         First Name
                     </Label>
-                    <Col sm={6}>
+                    <Col sm={10}>
                         <Input
                             id='firstName'
                             name='firstName'
@@ -51,7 +51,7 @@ const ContactForm = () => {
                     >
                         LastName
                     </Label>
-                    <Col sm={6}>
+                    <Col sm={10}>
                         <Input
                             id='lastName'
                             name='lastName'
@@ -67,7 +67,7 @@ const ContactForm = () => {
                     >
                         Email Address
                     </Label>
-                    <Col sm={6}>
+                    <Col sm={10}>
                         <Input
                             id='email'
                             name='email'
@@ -83,7 +83,7 @@ const ContactForm = () => {
                     >
                         Phone Number
                     </Label>
-                    <Col sm={6}>
+                    <Col sm={10}>
                         <Input
                             id='phoneNum'
                             name='phoneNum'
@@ -131,7 +131,6 @@ const ContactForm = () => {
                         </Label>
                     </FormGroup>
                     </Col>
-                </FormGroup>
                     <Col
                         sm={{
                             size: 2
@@ -148,6 +147,7 @@ const ContactForm = () => {
                         </Label>
                     </FormGroup>
                     </Col>
+                </FormGroup>
                 <FormGroup
                     check
                     row
