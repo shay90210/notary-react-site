@@ -25,28 +25,9 @@ const ContactForm = () => {
 
     return (
         <div>
-            <h1
-                className='pt-4 pb-4'
-                style={{ 
-                    textAlign: 'center',
-                    fontFamily: 'cabin'
-                }}
+            <Form
+                onSubmit={sendEmail}
             >
-                Contact Us
-            </h1>
-            <h3
-                style={{ 
-                    textAlign: 'center',
-                    fontSize: '18px',
-                    fontFamily: 'open-sans'
-
-                }}
-            >
-                Please fill out the form below so that we can schedule the next available appointment for you!
-            </h3>
-                <Form
-                    onSubmit={sendEmail}
-                >
                 <FormGroup row>
                     <Label
                     for='firstName'
@@ -151,7 +132,7 @@ const ContactForm = () => {
                     </FormGroup>
                     </Col>
                 </FormGroup>
-                   <Col
+                    <Col
                     sm={{
                         size: 2
                     }}
@@ -185,7 +166,7 @@ const ContactForm = () => {
                     </Button>
                     </Col>
                 </FormGroup>
-                </Form>
+            </Form>
         </div>
     )
 }

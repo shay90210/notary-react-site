@@ -2,7 +2,16 @@ import ContactForm from '../components/ContactForm';
 
 const ContactPage = () => {
     return (
-        <ContactForm />
+        <div>
+            <h1
+                style={{
+                    textAlign: 'center'
+                }}
+            >
+                Contact Us
+            </h1>
+            <ContactForm />
+        </div>
     )
 }
 
